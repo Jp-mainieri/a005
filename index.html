@@ -7,8 +7,46 @@
 
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+       <main>
+           <section class="rating_question">
+            <img src="images/icon-star.svg" id="star_icon"></img>
+               <article class="question_text">
+                <h1>How did we do?</h1>
+                <p>
+                    Please let us know how we did with your support <br>
+                    request. All feedback is appreciated to help us<br>
+                    improve our offering!
+                </p>
+                </article>
+                <nav>
+                    <span class="grades" id="n1">1</span>
+                    <span class="grades">2</span>
+                    <span class="grades">3</span>
+                    <span class="grades">4</span>
+                    <span class="grades">5</span>
+                </nav>
+                <input type="button" value="submit" id="submit_">
+           </section>
+           <section class="rating_res" class="hidden">
+                <div class="res_content">
+                    <img src="images/illustration-thank-you.svg" alt="Thank you!" id="thanks_img">
+                    <aside class="result_text">
+                        <p>You selected <span id="rating"></span>out of 5</p>
+                    </aside>
+                    <article class="thanks_message">
+                        <h1>Thank you!</h1>
+                        <p>We appreciate you taking the time to give a rating.<br> If you ever need more support,
+                        don't hesitate<br>
+                        to get in touch!
+                        </p>
+                    </article>
+                </div>
+           </section>
+       </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

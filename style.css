@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* - A tag: var(). não estava funcionando na hora do projeto, não faço ideia o porque.
+    - tag : var(). wasn't working when I was doing this project, I have no ideia why was it happening."
+*/
+root{
+    --color0:hsl(25, 97%, 53%);
+    --color1:hsl(0, 0%, 100%);
+    --color2:hsl(217, 12%, 63%);
+    --color3:hsl(216, 12%, 54%);
+    --color4:hsl(213, 19%, 18%);
+    --color5:hsl(216, 12%, 8%);
+}
+
+*{
+    font-size: 15px;
+    font-family: 'Overpass';
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+
+
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #141519;
+}
+main {
+    padding: 28px 35px 26px 30px;
+
+    background-image: linear-gradient(to bottom,#222933, #171E28);
+    border-radius: 30px;
+}
+#star_icon {
+    padding: 15px 15px 10px 15px;
+    background-color: #272E38;
+    width: min-content;
+    border-radius: 50%;
+    align-items: center;
+}
+.question_text > h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+
+    margin: 40px 0px 10px 0px;
+}
+.question_text > p {
+ line-height: 24px;  
+}
+.question_text {
+    padding-bottom: 30px;
+}
+.grades {
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: #272E38;
+    color: hsl(217, 12%, 63%);
+    border: none;
+
+    transition: 0.25s;
+    cursor: pointer;
+}
+#n1 {
+    padding: 15px 21px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#submit_ {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: auto;
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 30px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#submit_:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.grades:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: whitesmoke;
+}
+
+.rating_res {
+    display: none;
+    padding: 20px 0px;
+}
+
+.res_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result_text  p{
+    color: hsl(25, 97%, 53%);
+    padding: 7px 15px 5px 15px;
+    background-color: #272E38;
+    border-radius: 20px;
+    margin: 2.5rem 0px;
+}
+.result_text span {
+    color: hsl(25, 97%, 53%);
+}
+.thanks_message > h1{
+    color: white;
+    font-size: 26px;
+}
+
+.thanks_message {
+    text-align: center;
+}
+.thanks_message > p {
+    padding: 10px 0px;
+    line-height: 1.5em;
+}
+
+.checked {
+    background-color: hsl(25, 97%, 53% )!important;
+    color: white !important;
+}
